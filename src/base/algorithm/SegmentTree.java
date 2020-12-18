@@ -11,19 +11,20 @@ import java.util.Random;
 // update(int L,int R,int num) 在 L-R 上每个数更新为 num
 // getSum(int L,int R) 获取 L-R 上所有数的累加和
 // 上述三个方法的时间复杂度 log(n) 其核心思想为利用树形结构分段 + 懒更新机制。
+// 注意实现 时 L R 和当前节点 curL  curR 的区别 别传混了
 public class SegmentTree {
 
     public static void main(String[] args) {
         //对数器
         int testTimes = 5000;
-        int addOrUpdateTimes = 10;
-        int maxAddOrUpdateNum = 2;
+        int addOrUpdateTimes = 5000;
+        int maxAddOrUpdateNum = 5000;
         int testQueryTimes = 5000;
         Random random = new Random();
         //进行测试
         for (int i = 0; i < testTimes; i++) {
             int[] origin = GenerateUtil.generateArray(30, 10);
-            //System.out.println(Arrays.toString(origin));
+           // System.out.println(Arrays.toString(origin));
             SegmentTree segmentTree = new SegmentTree(origin);
             SegmentTreeON segmentTreeON = new SegmentTreeON(origin);
             int originLength = origin.length;
@@ -56,7 +57,7 @@ public class SegmentTree {
                     return;
                 }
             }
-            System.out.println("right " + i);
+            System.out.println("right "+(i+1));
         }
     }
 
@@ -82,6 +83,7 @@ public class SegmentTree {
 
 
     public SegmentTree(int[] origin) {
+
         this.REAL_LENGTH = origin.length + 1;
         this.arr = new int[REAL_LENGTH];
         for (int i = 0; i < origin.length; i++) {
@@ -96,6 +98,9 @@ public class SegmentTree {
 
     //初始化 sum 线段树
     public void build(int l, int r, int index) {
+        if(l>r){
+            return;
+        }
         if (l == r) {
             sum[index] = arr[l];
             return;
@@ -181,7 +186,7 @@ public class SegmentTree {
         //无法 hole 住 下发
         int mid = (curL + curR) >> 1;
         //这里 mid-curL+1 可以代实际数想 4 mid=2 2-1=1 1+1 =2  4-2=2 lN=2 rN=2 所以左边需要 +1
-        pushDown(index, mid - curL + 1, R - mid);
+        pushDown(index, mid - curL + 1, curR - mid);
         if (L <= mid) {
             update(L, R, num, curL, mid, index << 1);
         }
