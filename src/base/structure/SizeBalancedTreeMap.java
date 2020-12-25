@@ -18,6 +18,7 @@ public class SizeBalancedTreeMap<K extends Comparable<K>,V> {
         public SBTNode(K k,V v){
             this.key=k;
             this.value=v;
+            this.size=1;
         }
     }
     //根节点，注意左右旋时需要变换 root
@@ -55,7 +56,7 @@ public class SizeBalancedTreeMap<K extends Comparable<K>,V> {
         }
         //首先判断是否为 LL 型
         if(cur.left!=null&&cur.left.left!=null&&cur.right!=null&&cur.right.size<cur.left.left.size){
-            //确定为 LL 型 进行右旋
+            //确定为 LL 型 对当前节点进行右旋
             cur=rightRotate(cur);
             //右旋后 变动子节点的节点递归调用 maintain
             // 右旋后 当前节点变为 左孩子的右孩子 上一步右旋已经将 cur 赋值为左孩子 故先调用 cur.right
@@ -90,6 +91,7 @@ public class SizeBalancedTreeMap<K extends Comparable<K>,V> {
         SBTNode<K, V> pre = root;
         SBTNode<K, V> cur = root;
         while (cur != null) {
+            //记录之前的节点，当 cur 走到 null 时
             pre = cur;
             if (key.compareTo(cur.key) == 0) {
                 break;
@@ -232,27 +234,20 @@ public class SizeBalancedTreeMap<K extends Comparable<K>,V> {
         } else if (kth <= (cur.left != null ? cur.left.size : 0)) {
             return getIndex(cur.left, kth);
         } else {
-            return getIndex(cur.right, kth - (cur.right != null ? cur.right.size : 0) - 1);
+            return getIndex(cur.right, kth - (cur.left != null ? cur.left.size : 0) - 1);
         }
-
     }
 
     //有点问题，后面看看
     public static void main(String[] args) {
-        SizeBalancedTreeMap<String, Integer> sbt = new SizeBalancedTreeMap<String, Integer>();
-        sbt.put("d", 4);
-        sbt.put("c", 3);
-        sbt.put("a", 1);
-        sbt.put("b", 2);
-        // sbt.put("e", 5);
-        sbt.put("g", 7);
-        sbt.put("f", 6);
-        sbt.put("h", 8);
-        sbt.put("i", 9);
-        sbt.put("a", 111);
-        System.out.println(sbt.get("a"));
-        sbt.put("a", 1);
-        System.out.println(sbt.get("a"));
+        SizeBalancedTreeMap<Integer, String> sbt = new SizeBalancedTreeMap<Integer, String>();
+        sbt.put(1, "a");
+        sbt.put(22, "f");
+        sbt.put(21, "e");
+        sbt.put(13, "d");
+        sbt.put(41, "g");
+        sbt.put(12, "c");
+        sbt.put(11, "b");
         for (int i = 0; i < sbt.size(); i++) {
             System.out.println(sbt.getIndexKey(i) + " , " + sbt.getIndexValue(i));
         }
