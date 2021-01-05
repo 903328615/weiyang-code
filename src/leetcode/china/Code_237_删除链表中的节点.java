@@ -30,7 +30,7 @@ import base.structure.ListNode;
  * @author: wangzibin
  * @create: 2020-12
  **/
-public class Code_237 {
+public class Code_237_删除链表中的节点 {
 
     /*
     * 题目已经给出条件限制，故这边删除思路为 当前节点赋值为下一节点，删除下一节点

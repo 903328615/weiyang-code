@@ -27,7 +27,7 @@ import base.structure.TreeNode;
  * @author: wangzibin
  * @create: 2020-12
  **/
-public class Code_104 {
+public class Code_104_二叉树的最大深度 {
 
     /*
     * 这道题用递归的思想去做还是比较好理解的，该方法返回当前节点最大高度

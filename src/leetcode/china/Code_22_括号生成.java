@@ -7,7 +7,7 @@ import java.util.Stack;
 //22. 括号生成
 //https://leetcode-cn.com/problems/generate-parentheses/
 //整体思路 暴力递归 优化：剪枝
-public class Code_22 {
+public class Code_22_括号生成 {
 
     public List<String> generateParenthesis(int n) {
         List<String> ans=new ArrayList<String>();

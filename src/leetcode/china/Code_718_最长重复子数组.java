@@ -25,7 +25,7 @@ package leetcode.china;
  * @author: wangzibin
  * @create: 2020-12
  **/
-public class Code_718 {
+public class Code_718_最长重复子数组 {
 
     /*
     * 经典动态规划

@@ -8,7 +8,7 @@ package leetcode.china;
  * @author: wangzibin
  * @create: 2020-12-18 10:35
  **/
-public class Code_389 {
+public class Code_389_找不同 {
 
     public static void main(String[] args) {
 

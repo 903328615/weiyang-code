@@ -6,7 +6,7 @@ import java.util.Map;
 
 //https://leetcode-cn.com/problems/majority-element/
 //多数元素
-public class Code_169 {
+public class Code_169_多数元素 {
 
     //解法1 借助 hashMap 记录数字出现次数
     //时间复杂度 O(n)

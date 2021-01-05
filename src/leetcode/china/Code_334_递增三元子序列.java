@@ -1,7 +1,7 @@
 package leetcode.china;
 //递增三元子序列
 //https://leetcode-cn.com/problems/increasing-triplet-subsequence/
-public class Code_334 {
+public class Code_334_递增三元子序列 {
 
     // 有点贪心的思想
     public boolean increasingTriplet(int[] nums) {

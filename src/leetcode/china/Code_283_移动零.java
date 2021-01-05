@@ -21,7 +21,7 @@ package leetcode.china;
  * 链接：https://leetcode-cn.com/problems/move-zeroes
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  **/
-public class Code_283 {
+public class Code_283_移动零 {
 
     /**
      * 比较好的思路是使用双指针 notZero 表示非0数字区域，index 为遍历指针

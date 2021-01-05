@@ -9,7 +9,7 @@ import java.util.Comparator;
  * @author: wangzibin
  * @create: 2020-12-26 17:01
  **/
-public class Code_179 {
+public class Code_179_最大数 {
 
     //重点是自定义排序
     //时间 O(nlongn) 空间 O(n)

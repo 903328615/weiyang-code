@@ -12,7 +12,7 @@ package leetcode.china;
  * @author: wangzibin
  * @create: 2020-12-26 12:45
  **/
-public class Code_85 {
+public class Code_85_最大矩形 {
 
     //遍历矩形 至少 n^2 * m ^2 使用暴力法是达不到时间复杂度要求的
     //当前解法是暴力法+预处理数组 可以将时间复杂度压到 O(m^2 * n)  空间复杂度 O(mn)

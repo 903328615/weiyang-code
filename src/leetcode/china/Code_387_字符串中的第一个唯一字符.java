@@ -1,7 +1,7 @@
 package leetcode.china;
 //387. 字符串中的第一个唯一字符
 //https://leetcode-cn.com/problems/first-unique-character-in-a-string/
-public class Code_387 {
+public class Code_387_字符串中的第一个唯一字符 {
 
     //空间复杂度 O(Σ) 在这个题中 Σ=26 时间复杂度 O(n)
     public int firstUniqChar(String s) {

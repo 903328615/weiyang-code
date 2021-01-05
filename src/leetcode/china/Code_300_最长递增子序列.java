@@ -34,7 +34,7 @@ package leetcode.china;
  * @author: wangzibin
  * @create: 2020-12
  **/
-public class Code_300 {
+public class Code_300_最长递增子序列 {
 
     public static void main(String[] args) {
         int[] nums=new int[]{0,1,0,3,2,3,4,5,6,7,3,8,9,10,11,234};

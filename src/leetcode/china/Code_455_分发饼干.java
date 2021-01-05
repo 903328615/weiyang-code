@@ -35,7 +35,7 @@ import java.util.Arrays;
 //来源：力扣（LeetCode）
 //链接：https://leetcode-cn.com/problems/assign-cookies
 //著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
-public class Code_455 {
+public class Code_455_分发饼干 {
 
 
     //思路还是比较简单的，对两个数组进行排序，依次比对是否可以满足需求发送饼干，

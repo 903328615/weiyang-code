@@ -17,7 +17,7 @@ import base.structure.TreeNode;
  * @author: wangzibin
  * @create: 2020-12
  **/
-public class Code_222 {
+public class Code_222_完全二叉树的节点个数 {
 
     public int countNodes(TreeNode root) {
 

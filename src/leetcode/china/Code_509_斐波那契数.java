@@ -1,5 +1,8 @@
 package leetcode.china;
 
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.LockSupport;
+
 /**
  * @program: weiyang-code
  * @description: 509. 斐波那契数
@@ -16,7 +19,7 @@ package leetcode.china;
  * @author: wangzibin
  * @create: 2021-01
  **/
-public class Code_509 {
+public class Code_509_斐波那契数 {
 
     /*
     * 斐波那契数，经典的递归 动态规划题
@@ -56,6 +59,7 @@ public class Code_509 {
             f1=f2;
             f2=ans;
         }
+        LockSupport.park();
         return ans;
     }
 }

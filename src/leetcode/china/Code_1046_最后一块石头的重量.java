@@ -39,7 +39,7 @@ import java.util.PriorityQueue;
  * @author: wangzibin
  * @create: 2020-12
  **/
-public class Code_1046 {
+public class Code_1046_最后一块石头的重量 {
 
 
     //时间 n^2* log n 空间 O(1)

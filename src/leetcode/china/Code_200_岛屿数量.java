@@ -7,7 +7,7 @@ package leetcode.china;
  * @author: wangzibin
  * @create: 2020-12-22 19:01
  **/
-public class Code_200 {
+public class Code_200_岛屿数量 {
 
     //时间 O(N*M) 此算法时间复杂度已经是极好的了
     public int numIslands(char[][] grid) {

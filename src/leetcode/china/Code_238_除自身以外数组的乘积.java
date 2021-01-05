@@ -1,7 +1,7 @@
 package leetcode.china;
 //238. 除自身以外数组的乘积
 //https://leetcode-cn.com/problems/product-of-array-except-self/
-public class Code_238 {
+public class Code_238_除自身以外数组的乘积 {
 
     //使用除法
     //时间 O(n) 空间 O(1)

@@ -9,7 +9,7 @@ import base.structure.ListNode;
  * @author: wangzibin
  * @create: 2020-12
  **/
-public class Code_141 {
+public class Code_141_环形链表 {
 
 
     /*

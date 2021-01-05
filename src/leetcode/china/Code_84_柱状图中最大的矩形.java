@@ -10,7 +10,7 @@ import java.util.Stack;
  * @author: wangzibin
  * @create: 2020-12-26 18:10
  **/
-public class Code_84 {
+public class Code_84_柱状图中最大的矩形 {
 
     /**
      * 这道题思路变换一下，求 i 的最大面积 即 找到左边最近小于 i 的值 和右边 最近小于 i的值 中间即为最大面积

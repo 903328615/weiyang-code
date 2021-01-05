@@ -10,8 +10,6 @@ package leetcode.china;
  *
  * 若这两个字符串没有公共子序列，则返回 0。
  *
- *  
- *
  * 示例 1:
  *
  * 输入：text1 = "abcde", text2 = "ace"
@@ -41,7 +39,7 @@ package leetcode.china;
  * @author: wangzibin
  * @create: 2020-12
  **/
-public class Code_1143 {
+public class Code_1143_最长公共子序列 {
 
     public static void main(String[] args) {
         System.out.println(longestCommonSubsequence("abcde","ace"));

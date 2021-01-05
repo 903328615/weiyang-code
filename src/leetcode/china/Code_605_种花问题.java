@@ -27,7 +27,7 @@ package leetcode.china;
  * @author: wangzibin
  * @create: 2021-01
  **/
-public class Code_605 {
+public class Code_605_种花问题 {
 
 
     /*

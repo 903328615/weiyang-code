@@ -9,7 +9,7 @@ import java.util.Comparator;
  * @author: wangzibin
  * @create: 2020-12
  **/
-public class Code_435 {
+public class Code_435_无重叠区间 {
 
     public static void main(String[] args) {
         //int [][] a=new int[][]{{1,2},{2,3},{1,5},{2,9},{5,7},{1,3},{1,2},{1,2}};

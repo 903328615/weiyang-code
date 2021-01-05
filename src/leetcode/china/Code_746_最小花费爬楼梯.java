@@ -7,7 +7,7 @@ package leetcode.china;
  * @author: wangzibin
  * @create: 2020-12-21 13:07
  **/
-public class Code_746 {
+public class Code_746_最小花费爬楼梯 {
 
     public int minCostClimbingStairs(int[] cost) {
         if(cost.length==2){

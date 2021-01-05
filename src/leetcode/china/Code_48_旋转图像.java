@@ -9,7 +9,7 @@ import java.util.Arrays;
  * @author: wangzibin
  * @create: 2020-12-19 09:26
  **/
-public class Code_48 {
+public class Code_48_旋转图像 {
 
     /**
      * 这个题要求原地操作 即 空间复杂度要达到 O(1)

@@ -8,7 +8,7 @@ package leetcode.china;
  * @author: wangzibin
  * @create: 2020-12-20 16:13
  **/
-public class Code_316 {
+public class Code_316_不同字符的最小子序列 {
 
     /**
      * 这道题的思路利用单调栈，但这个单调栈需要进行特殊处理一下。

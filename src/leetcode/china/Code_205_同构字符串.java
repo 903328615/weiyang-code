@@ -20,7 +20,7 @@ import java.util.Set;
  * @author: wangzibin
  * @create: 2020-12
  **/
-public class Code_205 {
+public class Code_205_同构字符串 {
 
     /*
     * 第一时间想到了使用 HashMap 一一对应映射，同时要注意不能出现多个key对应同一个 value
